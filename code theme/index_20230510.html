@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&amp;family=Zen+Old+Mincho:wght@400;500;600;700;900&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" rel="stylesheet"
+    type="text/css" media="all">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <title>Document</title>
+</head>
+
+<body id="body">
+  <div class="em__header" id="em__header">
+    <h1 class="em__header-heading">
+      <a href="/" class="em__header-logo">
+        <img src="./img/logo_nav.png" alt="logo">
+      </a>
+    </h1>
+    <nav class="header__inline-menu em__header-nav">
+      <ul class="header__navList">
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Home</a></li>
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Jewelry</a></li>
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Necklace</a></li>
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Babyring</a></li>
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Charm</a></li>
+        <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Gift</a></li>
+      </ul>
+    </nav>
+    <div class="em__header-icons">
+      <div class="em__header-icon">
+        <a href="#" class="em__header-iconLink">
+          <span class="em__header-iconBag">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="#8e623e" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.9964 13.6213L14.6631 3.93922C14.6329 3.71921 14.4448 3.55521 14.2226 3.55521H11.1114V3.11075C11.1114 1.39559 9.71583 0 8.00022 0C6.28462 0 4.88902 1.39559 4.88902 3.1112V3.55565H1.77783C1.5556 3.55565 1.36804 3.71966 1.33737 3.93966L0.00400011 13.6213C0.00133337 13.6413 0 13.6617 0 13.6817C0 14.96 1.15648 16 2.57785 16H13.4226C14.844 16 16.0004 14.96 16.0004 13.6817C16.0004 13.6613 15.9991 13.6413 15.9964 13.6213ZM5.77794 3.1112C5.77794 1.88583 6.77485 0.888914 8.00022 0.888914C9.22559 0.888914 10.2225 1.88583 10.2225 3.1112V3.55565H5.77794V3.1112ZM13.4226 15.1115H2.57785C1.65782 15.1115 0.907136 14.4853 0.889358 13.7102L2.16539 4.44457H4.88902V5.77794C4.88902 6.02328 5.08814 6.22239 5.33348 6.22239C5.57882 6.22239 5.77794 6.02328 5.77794 5.77794V4.44457H10.2225V5.77794C10.2225 6.02328 10.4216 6.22239 10.667 6.22239C10.9123 6.22239 11.1114 6.02328 11.1114 5.77794V4.44457H13.8351L15.1111 13.7102C15.0933 14.4853 14.3426 15.1115 13.4226 15.1115Z">
+              </path>
+            </svg>
+          </span>
+          <span class="em__header-iconText">Bag</span>
+        </a>
+      </div>
+    </div>
+    <div class="em__headerDrawer">
+      <div id="Details-menu-drawer-container" class="menu-drawer-container">
+        <summary id="emDrawerButton" class="em-headerDrawer__summary">
+          <div class="em-headerDrawer__burger">
+            <span></span>
+            <span></span>
+          </div>
+        </summary>
+        <div id="menu-drawer" class="menu-drawer em-headerDrawer__content" tabindex="-1">
+          <div class="menu-drawer__inner-container">
+            <div class="menu-drawer__navigation-container">
+              <nav class="em-header__nav">
+                <ul class="header__navList">
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Home</a></li>
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Jewelry</a></li>
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Necklace</a></li>
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Babyring</a></li>
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Charm</a></li>
+                  <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Gift</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <main class="mainContent">
+    <div class="em-homeMv js-homeMvSwipe">
+      <div class="em-homeMv__inner swiper-wrapper">
+        <div class="em-homeMv__image swiper-slide">
+          <img src="./img/mv_pc01.jpg" alt="" class="show__pc">
+          <img src="./img/mv_sp01.jpg" alt="" class="show__sp">
+        </div>
+        <div class="em-homeMv__image swiper-slide">
+          <img src="./img/mv_pc02.jpg" alt="" class="show__pc">
+          <img src="./img/mv_sp02.jpg" alt="" class="show__sp">
+        </div>
+        <div class="em-homeMv__image swiper-slide">
+          <img src="./img/mv_pc03.jpg" alt="" class="show__pc">
+          <img src="./img/mv_sp03.jpg" alt="" class="show__sp">
+        </div>
+
+        <div class="em-homeMv__image swiper-slide">
+          <img src="./img/mv_pc04.jpg" alt="" class="show__pc">
+          <img src="./img/mv_sp04.jpg" alt="" class="show__sp">
+        </div>
+        <div class="em-homeMv__image swiper-slide">
+          <img src="./img/mv_pc05.jpg" alt="" class="show__pc">
+          <img src="./img/mv_sp05.jpg" alt="" class="show__sp">
+        </div>
+      </div>
+      <div class="em-homeMv__dots js-homeMvSwipe__dots"></div>
+    </div>
+
+    <section class="em-homeConcept em-section">
+      <div class="em-homeWrap">
+        <h2 class="em-section__name">( Concept )</h2>
+        <div class="em-homeLayout m-concept">
+          <div class="em-homeLayout__image">
+            <h3 class="em-homeLayout__title c-maskText c-lowIn js-mtConceptTitle mt">
+              <span class="c-maskText__row">
+                <span class="mt" data-mt_trigger=".js-mtConceptTitle">M</span><span class="mt" data-mt_delay="50"
+                  data-mt_trigger=".js-mtConceptTitle">a</span><span class="mt" data-mt_delay="100"
+                  data-mt_trigger=".js-mtConceptTitle">t</span><span class="mt" data-mt_delay="150"
+                  data-mt_trigger=".js-mtConceptTitle">e</span><span class="mt" data-mt_delay="200"
+                  data-mt_trigger=".js-mtConceptTitle">r</span><span class="mt" data-mt_delay="250"
+                  data-mt_trigger=".js-mtConceptTitle">n</span><span class="mt" data-mt_delay="300"
+                  data-mt_trigger=".js-mtConceptTitle">i</span><span class="mt" data-mt_delay="350"
+                  data-mt_trigger=".js-mtConceptTitle">t</span><span class="mt" data-mt_delay="400"
+                  data-mt_trigger=".js-mtConceptTitle">y</span><span class="mt" data-mt_delay="450"
+                  data-mt_trigger=".js-mtConceptTitle">&nbsp;</span>
+              </span>
+              <span class="c-maskText__row">
+                <span class="mt u-spl6" data-mt_delay="500" data-mt_trigger=".js-mtConceptTitle">J</span><span
+                  class="mt" data-mt_delay="550" data-mt_trigger=".js-mtConceptTitle">e</span><span class="mt"
+                  data-mt_delay="600" data-mt_trigger=".js-mtConceptTitle">w</span><span class="mt" data-mt_delay="650"
+                  data-mt_trigger=".js-mtConceptTitle">e</span><span class="mt" data-mt_delay="700"
+                  data-mt_trigger=".js-mtConceptTitle">l</span><span class="mt" data-mt_delay="750"
+                  data-mt_trigger=".js-mtConceptTitle">r</span><span class="mt" data-mt_delay="800"
+                  data-mt_trigger=".js-mtConceptTitle">y</span>
+              </span>
+            </h3>
+            <img src="./img/img_concept.jpg" alt="" class="js-imagePatallax">
+          </div>
+          <div class="em-homeLayout__content">
+            <p class="em-homeLayout__read js-conceptEvent em-homeLayout__text-med c-fadeUp mt">
+              妊娠という、<br class="show__pc">かけがえのない<br class="show__pc">ライフイベントへの<br class="show__pc">贈りもの。
+            </p>
+            <p class="em-homeLayout__text c-fadeUp mt" data-mt_trigger=".js-conceptEvent" data-mt_delay="150">
+              それは、<br>
+              いのちを授かった奇跡を祝福し、<br>
+              十月十日を輝かせるジュエリー。
+            </p>
+            <p class="em-homeLayout__text c-fadeUp mt" data-mt_trigger=".js-conceptEvent" data-mt_delay="300">
+              親子のきずなのように<br>
+              ベビーリングと繋がったネックレスが、<br>
+              あなたのマタニティライフに寄りそいます。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="em-homeMovie em-section">
+      <h2 class="em-section__name m-white">( Brand Movie )</h2>
+      <video autoplay="" loop="" muted="" playsinline="" preload="auto" class="em-homeMovie__bg" id="movie">
+        <source type="video/mp4" src="./video/video01.mp4" id="movie_src">
+      </video>
+      <a href="javascript:void(0);" id="movieModalButton" class="em-home__link em-homeMovie__content u-underlineAnime">
+        <div class="em-homeWrap">
+          <div class="em-homeMovie__wrap">
+            <h2 class="em-homeMovie__title c-maskText">
+              <span class="c-maskText__row m-movie js-movieTitle">
+                <span class="mt">母になる日々が、</span>
+              </span>
+              <span class="c-maskText__row m-movie">
+                <span class="mt" data-mt_trigger=".js-movieTitle" data-mt_delay="1200">
+                  宝ものになりますように。
+                </span>
+              </span>
+            </h2>
+            <p class="em-homeMovie__link"><span class="u-underlineAnime__line">Play Movie</span></p>
+          </div>
+        </div>
+      </a>
+    </section>
+    <section class="em-homeMessage em-section">
+      <h2 class="em-section__name">( Message )</h2>
+      <figure class="em-homeMessage__image m-lefttop c-fadeUp mt">
+        <img src="./img/img_message01.jpg" alt="" class="show__pc js-imagePatallax">
+        <img src="./img/img_message01-sp.jpg" alt="" class="show__sp js-imagePatallax">
+      </figure>
+      <figure class="em-homeMessage__image m-rightmiddle c-fadeUp mt">
+        <img src="./img/img_message02.jpg" alt="" class="show__pc js-imagePatallax">
+        <img src="./img/img_message02-sp.jpg" alt="" class="show__sp js-imagePatallax">
+      </figure>
+      <figure class="em-homeMessage__image m-rightbottom c-fadeUp mt">
+        <img src="./img/img_message03.jpg" alt="" class="js-imagePatallax">
+      </figure>
+      <div class="em-homeWrap">
+        <div class="em-homeMessage__block m-right">
+          <p class="em-homeMessage__text js-messageRightEvent c-fadeUp mt">
+            おなかにいのちを授かった日。奇跡のようなできごとに、喜びがあふれた。
+          </p>
+          <p class="em-homeMessage__text c-fadeUp mt" data-mt_trigger=".js-messageRightEvent" data-mt_delay="150">
+            母になる旅がはじまる。まだ知らない道を、手さぐりで歩むまいにち。
+          </p>
+          <p class="em-homeMessage__text c-fadeUp mt" data-mt_trigger=".js-messageRightEvent" data-mt_delay="300">
+            その道は、けっして平坦ではないから。あなたの旅路に寄りそうジュエリーを贈ります。
+          </p>
+        </div>
+        <div class="em-homeMessage__block m-left">
+          <p class="em-homeMessage__text js-messageLeftEvent c-fadeUp mt">
+            十月十日のかぎりある時間が、きらきらと輝くように。
+          </p>
+          <p class="em-homeMessage__text c-fadeUp mt" data-mt_trigger=".js-messageLeftEvent" data-mt_delay="150">
+            かけがえのないその日々の、思い出が刻まれるように。
+          </p>
+          <p class="em-homeMessage__text c-fadeUp mt" data-mt_trigger=".js-messageLeftEvent" data-mt_delay="300">
+            そしていつか、乗りこえた道のりの証となり、あなたの人生に寄りそう輝きとなることを願って。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="em-homeProduct em-section">
+      <h2 class="em-section__name">( Product )</h2>
+      <div class="em-homeWrap">
+        <div class="em-homeProduct__visual">
+          <div class="em-homeProduct__visualImage">
+            <div class="em-homeProduct__visualFigure">
+              <img src="./img/img_product.png" alt="">
+            </div>
+          </div>
+          <div class="em-homeProduct__visualWrap js-flowSwiper">
+            <div class="swiper-wrapper">
+              <p class="em-homeProduct__visualText swiper-slide">Baby ring<span><img src="./img/ico_cross.svg"
+                    alt=""></span>Necklace</p>
+              <p class="em-homeProduct__visualText swiper-slide">Baby ring<span><img src="./img/ico_cross.svg"
+                    alt=""></span>Necklace</p>
+              <p class="em-homeProduct__visualText swiper-slide">Baby ring<span><img src="./img/ico_cross.svg"
+                    alt=""></span>Necklace</p>
+            </div>
+          </div>
+        </div>
+        <div class="em-homeProduct__head">
+          <div class="em-homeProduct__headWrap">
+            <h3 class="em-homeProduct__headTitle u-pmlm3">Product</h3>
+            <p class="em-homeProduct__headSub">ベビーリング×ネックレス</p>
+          </div>
+          <p class="em-homeProduct__headRead">
+            and VITAは、<br class="show__sp">そのふたつを掛けあわせたジュエリー。<br>
+            選べるベビーリングとネックレスチェーン、<br>
+            そして両者をつなぐマンテルとの組み合わせで、<br>
+            スタイルはさまざまに変化します。<br>
+            あなたらしいセレクトを見つけてみてください。
+          </p>
+        </div>
+      </div>
+      <div class=em-homeProductItem>
+        <div class="em-homeWrap em-homeProductItem__inner">
+          <div class="em-homeProductItem__content">
+            <h3 class="em-homeProductItem__title">Baby ring</h3>
+            <p class="em-homeProductItem__kana">ベビーリング</p>
+            <p class="em-homeProductItem__text">
+              ふだんはネックレスの主役として。<br>
+              出産が叶った日には、<br>
+              小さなその指に通すリングとして。<br>
+              ３種類のデザイン、<br class="show__pc">
+              それぞれに希望を込めました。<br>
+              あなたが願う未来を想いながら、<br class="show__pc">
+              お選びください。
+            </p>
+          </div>
+          <div class="em-homeProductItem__swiper js-productItemSwiper">
+            <ul class="em-homeProductItem__swiperList swiper-wrapper">
+              <li class="em-homeProductItem__swiperItem swiper-slide">
+                <p class="em-homeProductItem__swiperLabel">Baby ring - verus</p>
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_babyRing01.jpg" alt="">
+                  <figcaption class="em-homeProductItem__swiperCaption m-left m-white">
+                    <p class="em-homeProductItem__swiperName">verus</p>
+                    <p class="em-homeProductItem__swiperText">まっすぐに未来へと向かう気持ちを線であらわしたverus。<br
+                        class="show__pc">⼈から信頼され、⼤きく⽻ばたく⼈⽣になりますように。</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="em-homeProductItem__swiperItem swiper-slide">
+                <p class="em-homeProductItem__swiperLabel">Baby ring - mitis</p>
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_babyRing02.jpg" alt="">
+                  <figcaption class="em-homeProductItem__swiperCaption m-left m-white">
+                    <p class="em-homeProductItem__swiperName">mitis</p>
+                    <p class="em-homeProductItem__swiperText">たえ間なく、やさしく打ち寄せる波をあらわしたmitis。<br
+                        class="show__pc">⻘空のもと、穏やかに輝く海のような⼼の持ち主になりますように。</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="em-homeProductItem__swiperItem swiper-slide">
+                <p class="em-homeProductItem__swiperLabel">Baby ring - loquax</p>
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_babyRing03.jpg" alt="">
+                  <figcaption class="em-homeProductItem__swiperCaption m-left m-white">
+                    <p class="em-homeProductItem__swiperName">loquax</p>
+                    <p class="em-homeProductItem__swiperText">リズミカルなデザインが無邪気なloquax。<br
+                        class="show__pc">いつでも多くの⼈に囲まれ、笑顔のたえない⼈⽣になりますように。</p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <p class="em-homeProductItem__swiperArrow m-next js-productItemSwiper__next"></p>
+            <p class="em-homeProductItem__swiperArrow m-prev js-productItemSwiper__prev"></p>
+            <div class="em-homeProductItem__swiperDots js-productItemSwiper__dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class=em-homeProductItem>
+        <div class="em-homeWrap em-homeProductItem__inner">
+          <div class="em-homeProductItem__content">
+            <h3 class="em-homeProductItem__title">Chain</h3>
+            <p class="em-homeProductItem__kana">ネックレス / チェーン</p>
+            <p class="em-homeProductItem__text">
+              スタイリングの印象を<br>
+              ⼤きく変えるチェーン。<br>
+              ２つのカラーと３種の長さから、<br>
+              あなたらしさをお選びください。
+            </p>
+          </div>
+          <div class="em-homeProductItem__swiper js-productItemSwiper">
+            <ul class="em-homeProductItem__swiperList swiper-wrapper">
+              <li class="em-homeProductItem__swiperItem swiper-slide">
+                <p class="em-homeProductItem__swiperLabel">Chain - Gold</p>
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_chain01.jpg" alt="">
+                  <figcaption class="em-homeProductItem__swiperCaption m-right">
+                    <p class="em-homeProductItem__swiperName">Gold</p>
+                    <p class="em-homeProductItem__swiperText">
+                      華やかながら華奢なシルエットが、<br class="show__pc">
+                      どんなスタイルにも合わせやすいゴールド。<br class="show__pc">
+                      18⾦の優雅な質感は、ハレの⽇にも輝きを添えてくれます。
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="em-homeProductItem__swiperItem swiper-slide">
+                <p class="em-homeProductItem__swiperLabel">Chain - Silver</p>
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_chain02.jpg" alt="">
+                  <figcaption class="em-homeProductItem__swiperCaption m-right">
+                    <p class="em-homeProductItem__swiperName">Silver</p>
+                    <p class="em-homeProductItem__swiperText">
+                      ジェンダーレスなスタイリングをお楽しみいただけるシルバー。<br class="show__pc">
+                      リングとマンテルのゴールドがミックスされ、<br class="show__pc">
+                      こなれた雰囲気を演出します。
+                    </p>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <p class="em-homeProductItem__swiperArrow m-next js-productItemSwiper__next"></p>
+            <p class="em-homeProductItem__swiperArrow m-prev js-productItemSwiper__prev"></p>
+            <div class="em-homeProductItem__swiperDots js-productItemSwiper__dots"></div>
+          </div>
+        </div>
+      </div>
+      <div class=em-homeProductItem>
+        <div class="em-homeWrap em-homeProductItem__inner">
+          <div class="em-homeProductItem__content">
+            <h3 class="em-homeProductItem__title">Mantel</h3>
+            <p class="em-homeProductItem__kana">ネックレス / マンテル</p>
+            <p class="em-homeProductItem__text">
+              本来はチェーンを留める役割のマンテルも、<br>
+              このネックレスの主役です。<br>
+              ベビーリングと組み合わせ、<br>
+              さまざまなアレンジでスタイリングしながら、<br>
+              そのデザインをお楽しみください。
+            </p>
+          </div>
+          <div class="em-homeProductItem__swiper">
+            <ul class="em-homeProductItem__swiperList">
+              <li class="em-homeProductItem__swiperItem">
+                <figure class="em-homeProductItem__swiperImage">
+                  <img src="./img/img_mantel01.jpg" alt="">
+                </figure>
+              </li>
+            </ul>
+            <div class="em-homeProductItem__swiperDots js-productItemSwiper__dots"></div>
+          </div>
+        </div>
+      </div>
+      <a href="javascript:void(0);" id="productModalButton" class="em-homeProductHow">
+        <div class="em-homeWrap em-homeProductHow__inner">
+          <div class="em-homeProductHow__wrap">
+            <p class="em-homeProductHow__title">How to Use</p>
+            <p class="em-homeProductHow__text">各パーツの使用方法についてはこちらから</p>
+          </div>
+          <figure class="em-homeProductHow__arrow">
+            <img src="./img/ico_arrowHow.svg" alt="" class="show__pc">
+            <img src="./img/ico_arrowHow-sp.svg" alt="" class="show__sp">
+          </figure>
+        </div>
+      </a>
+    </section>
+
+    <div id="productModalContent" class="em-homeModal em-homeHow">
+      <div class="em-homeModal__inner">
+        <div class="em-homeHow__section" id="howName">
+          <div class="em-homeHow__content">
+            <p class="em-homeHow__en">Name of each part</p>
+            <h3 class="em-homeHow__title">各パーツの名称</h3>
+            <div class="em-homeHow__inner">
+              <ul class="em-homeHow__part">
+                <li class="em-homeHow__partItem">
+                  <figure class="em-homeHow__partImage"><img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howPart01.png?v=13818563458717378697"
+                      alt=""></figure>
+                  <div class="em-homeHow__partContent">
+                    <p class="em-homeHow__partName">Baby ring</p>
+                    <p class="em-homeHow__partKana">ベビーリング</p>
+                    <p class="em-homeHow__partAnnotation">&nbsp;</p>
+                  </div>
+                </li>
+                <li class="em-homeHow__partItem">
+                  <figure class="em-homeHow__partImage"><img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howPart02.png?v=2241897233876266385"
+                      alt=""></figure>
+                  <div class="em-homeHow__partContent">
+                    <p class="em-homeHow__partName">hook</p>
+                    <p class="em-homeHow__partKana">フック</p>
+                    <p class="em-homeHow__partAnnotation">&nbsp;</p>
+                  </div>
+                </li>
+                <li class="em-homeHow__partItem">
+                  <figure class="em-homeHow__partImage"><img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howPart03.png?v=2939848600666617906"
+                      alt=""></figure>
+                  <div class="em-homeHow__partContent">
+                    <p class="em-homeHow__partName">Mantel</p>
+                    <p class="em-homeHow__partKana">マンテル</p>
+                    <p class="em-homeHow__partAnnotation">&nbsp;</p>
+                  </div>
+                </li>
+                <li class="em-homeHow__partItem">
+                  <figure class="em-homeHow__partImage"><img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howPart04.png?v=11887602973222927700"
+                      alt=""></figure>
+                  <div class="em-homeHow__partContent">
+                    <p class="em-homeHow__partName">Charm</p>
+                    <p class="em-homeHow__partKana">チャーム</p>
+                    <p class="em-homeHow__partAnnotation">※オプション</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="em-homeHow__image"
+            style="background-image: url(//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_how01.jpg?v=14306333229466290373);">
+            &nbsp;</div>
+        </div>
+        <div class="em-homeHow__section" id="howUse">
+          <div class="em-homeHow__content">
+            <p class="em-homeHow__en">How to Use</p>
+            <h3 class="em-homeHow__title">ベビーリングを使用した留め方</h3>
+            <div class="em-homeHow__inner">
+              <ol class="em-homeHow__use em-homeHowList">
+                <li class="em-homeHow__useItem">
+                  <div class="em-homeHow__useHeading em-homeHowList__heading">
+                    <p class="em-homeHowList__circle">1</p>
+                    <h4 class="em-homeHowList__title">フックにリングをかける</h4>
+                  </div>
+                  <figure class="em-homeHow__useImage">
+                    <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howUse01.png?v=4205549229017707651"
+                      alt="">
+                  </figure>
+                </li>
+                <li class="em-homeHow__useItem">
+                  <div class="em-homeHow__useHeading em-homeHowList__heading">
+                    <p class="em-homeHowList__circle">2</p>
+                    <h4 class="em-homeHowList__title">マンテルをリングに通す</h4>
+                  </div>
+                  <figure class="em-homeHow__useImage">
+                    <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howUse02.png?v=14392756833392657621"
+                      alt="">
+                  </figure>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="em-homeHow__image"
+            style="background-image: url(//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_how02.jpg?v=4632790255889678437);">
+            &nbsp;</div>
+        </div>
+        <div class="em-homeHow__section" id="howNoUse">
+          <div class="em-homeHow__content">
+            <p class="em-homeHow__en">How to Use</p>
+            <h3 class="em-homeHow__title">ベビーリングを使用しない留め方</h3>
+            <div class="em-homeHow__inner">
+              <ul class="em-homeHow__noUse em-homeHowList m-column">
+                <li class="em-homeHow__noUseItem">
+                  <div class="em-homeHow__noUseHeading em-homeHowList__heading">
+                    <p class="em-homeHowList__circle">A</p>
+                    <h4 class="em-homeHowList__title">
+                      マンテルの<br>
+                      根本のチェーンに<br>
+                      フックをかける
+                    </h4>
+                  </div>
+                  <figure class="em-homeHow__noUseImage">
+                    <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howNoUse01.png?v=5204708495020876738"
+                      alt="">
+                  </figure>
+                </li>
+                <li class="em-homeHow__noUseItem">
+                  <div class="em-homeHow__noUseHeading em-homeHowList__heading">
+                    <p class="em-homeHowList__circle">B</p>
+                    <h4 class="em-homeHowList__title">
+                      お好きな長さに調節して<br>
+                      チェーンにフックを<br>
+                      かける
+                    </h4>
+                  </div>
+                  <figure class="em-homeHow__noUseImage">
+                    <img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howNoUse02.png?v=14597490654602282208"
+                      alt="">
+                  </figure>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="em-homeHow__image"
+            style="background-image: url(//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_how03.jpg?v=8152577802523256307);">
+            &nbsp;</div>
+        </div>
+        <div class="em-homeHow__section" id="howCharm">
+          <div class="em-homeHow__content">
+            <p class="em-homeHow__en">How to Use a charm</p>
+            <h3 class="em-homeHow__title">チャームの使い方</h3>
+            <div class="em-homeHow__inner">
+              <div class="em-homeHow__charm">
+                <div class="em-homeHow__charmUse">
+                  <figure class="em-homeHow__charmImage"><img
+                      src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howCharm01.png?v=17628259233023920956"
+                      alt=""></figure>
+                  <p class="em-homeHow__charmText">開閉式コネクターのつまみを上に<br class="show__pc">上げるようにして開きます</p>
+                </div>
+                <ul class="em-homeHow__charmList em-homeHowList m-column">
+                  <li class="em-homeHow__charmList__item">
+                    <div class="em-homeHow__charmList__heading em-homeHowList__heading">
+                      <p class="em-homeHowList__circle">A</p>
+                      <h4 class="em-homeHowList__title">チェーンにかける</h4>
+                    </div>
+                    <figure class="em-homeHow__charmList__image">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howCharm02.png?v=6601168339033211440"
+                        alt="">
+                    </figure>
+                  </li>
+                  <li class="em-homeHow__charmList__item">
+                    <div class="em-homeHow__charmList__heading em-homeHowList__heading">
+                      <p class="em-homeHowList__circle">B</p>
+                      <h4 class="em-homeHowList__title">リングにかける</h4>
+                    </div>
+                    <figure class="em-homeHow__charmList__image">
+                      <img
+                        src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_howCharm03.png?v=3520305486388008148"
+                        alt="">
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="em-homeHow__image"
+            style="background-image: url(//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_how04.jpg?v=7052466729830847500);">
+            &nbsp;</div>
+        </div>
+      </div>
+      <span id="productModalScroll" class="em-homeHow__scroll">( Scroll Next )</span>
+      <span id="productModalClose" class="em-homeModal__close"><img
+          src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/ico_modalClose.svg?v=3785707608164435820"
+          alt="✕"></span>
+    </div>
+    <section id="lineup" class="em-homeLineup em-section">
+      <h2 class="em-section__name">( Lineup )</h2>
+      <div class="em-homeLineup__section m-gold">
+        <div class="em-homeLineup__flow m-gold js-flowSwiperGoldChain">
+          <div class="swiper-wrapper">
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Gold Chain</p>
+          </div>
+        </div>
+        <ul class="em-homeLineup__list m-gold">
+          <li class="em-homeLineup__item js-lineupGolodChain c-fadeUp mt"><a
+              href="/products/necklace-gold-babyring-verus" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup01.jpg?v=2566189941234612952"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（verus）× <br>
+                ネックレス (ゴールドチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥98,700<span>（税込み）〜</span></p>
+            </a>
+          </li>
+          <li class="em-homeLineup__item c-fadeUp mt" data-mt_trigger=".js-lineupGolodChain" data-mt_delay="250"><a
+              href="/products/necklace-gold-babyring-mitis" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup02.jpg?v=3734973609994462044"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（mitis）× <br>
+                ネックレス (ゴールドチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥98,700<span>（税込み）〜</span></p>
+            </a>
+          </li>
+          <li class="em-homeLineup__item c-fadeUp mt" data-mt_trigger=".js-lineupGolodChain" data-mt_delay="500"><a
+              href="/products/necklace-gold-babyring-loquax" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup03.jpg?v=8407815619086262246"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（loquax）× <br>
+                ネックレス (ゴールドチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥98,700<span>（税込み）〜</span></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="em-homeLineup__section m-silver">
+        <div class="em-homeLineup__flow m-silver js-flowSwiperChain">
+          <div class="swiper-wrapper">
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+            <p class="swiper-slide em-homeLineup__color">Silver Chain</p>
+          </div>
+        </div>
+        <ul class="em-homeLineup__list m-silver">
+          <li class="em-homeLineup__itemjs js-lineupSilverChain c-fadeUp mt"><a
+              href="/products/necklace-silver-babyring-verus" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup04.jpg?v=5727966002574738600"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（verus）× <br>
+                ネックレス (シルバーチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥71,600<span>（税込み）〜</span></p>
+            </a>
+          </li>
+          <li class="em-homeLineup__item c-fadeUp mt" data-mt_trigger=".js-lineupSilverChain" data-mt_delay="250"><a
+              href="/products/necklace-silver-babyring-mitis" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup05.jpg?v=9628004105335390078"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（mitis）× <br>
+                ネックレス (シルバーチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥71,600<span>（税込み）〜</span></p>
+            </a>
+          </li>
+          <li class="em-homeLineup__item c-fadeUp mt" data-mt_trigger=".js-lineupSilverChain" data-mt_delay="500"><a
+              href="/products/necklace-silver-babyring-loquax" class="em-homeLineup__link u-underlineAnime">
+              <figure class="em-homeLineup__image">
+                <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineup06.jpg?v=2527932596335905078"
+                  alt="">
+              </figure>
+              <h3 class="em-homeLineup__name">
+                ベビーリング（loquax）× <br>
+                ネックレス (シルバーチェーン) セット
+              </h3>
+              <p class="em-homeLineup__money u-underlineAnime__line">¥71,600<span>（税込み）〜</span></p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="em-homeLineupCollection">
+        <a href="/collections/babyring" class="em-homeLineupCollection__link u-arrow">
+          <figure class="em-homeLineupCollection__bg"><img
+              src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineupCollection01.jpg?v=1542629521200205292"
+              alt=""></figure>
+          <div class="em-homeLineupCollection__wrap">
+            <p class="em-homeLineupCollection__name">Baby ring</p>
+            <p class="em-homeLineupCollection__kana">ベビーリング単品</p>
+          </div>
+          <span class="em-homeLineupCollection__arrow u-arrow__icon m-how"></span>
+        </a>
+        <a href="/collections/charm" class="em-homeLineupCollection__link u-arrow">
+          <figure class="em-homeLineupCollection__bg"><img
+              src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_lineupCollection02.jpg?v=7501109453819202976"
+              alt=""></figure>
+          <div class="em-homeLineupCollection__wrap">
+            <p class="em-homeLineupCollection__name">Charm</p>
+            <p class="em-homeLineupCollection__kana">チャーム単品</p>
+          </div>
+          <span class="em-homeLineupCollection__arrow u-arrow__icon m-how"></span>
+        </a>
+      </div>
+    </section>
+    <section class="em-homeStyling em-section">
+      <div class="em-homeWrap em-homeStyling__inner">
+        <h2 class="em-homeStyling__title c-maskText">
+          <span class="c-maskText__row">
+            <span class="mt">S</span><span class="mt" data-mt_delay="50">t</span><span class="mt"
+              data-mt_delay="100">y</span><span class="mt" data-mt_delay="150">l</span><span class="mt"
+              data-mt_delay="200">i</span><span class="mt" data-mt_delay="250">n</span><span class="mt"
+              data-mt_delay="300">g</span><span class="m-no">&nbsp;</span><span class="mt"
+              data-mt_delay="350">i</span><span class="mt" data-mt_delay="400">n</span>
+          </span>
+          <span class="c-maskText__row">
+            <span class="mt" data-mt_delay="450">M</span><span class="mt" data-mt_delay="500">u</span><span class="mt"
+              data-mt_delay="550">l</span><span class="mt" data-mt_delay="600">t</span><span class="mt"
+              data-mt_delay="650">i</span><span class="mt" data-mt_delay="700">p</span><span class="mt"
+              data-mt_delay="750">l</span><span class="mt" data-mt_delay="800">e</span>
+          </span>
+          <span class="c-maskText__row">
+            <span class="mt" data-mt_delay="850">W</span><span class="mt" data-mt_delay="900">a</span><span class="mt"
+              data-mt_delay="950">y</span>
+          </span>
+        </h2>
+        <div class="em-homeStyling__content">
+          <h3 class="em-homeStyling__sub js-stylingTextEvent c-fadeUp mt">
+            スタイリング自由自在
+          </h3>
+          <p class="em-homeStyling__text c-fadeUp mt" data-mt_trigger=".js-stylingTextEvent" data-mt_delay="150">
+            着こなしや気分、<br class="show__sp">ライフステージに合わせて、<br>そのスタイルもさまざまに変化。</p>
+          <p class="em-homeStyling__text c-fadeUp mt" data-mt_trigger=".js-stylingTextEvent" data-mt_delay="300">
+            チェーンだけで、<br class="show__sp">ミニマルにスタイリングしたいとき。<br>
+            マンテルをアクセントに、<br class="show__sp">ユニセックスに飾りたいとき。<br>
+            チャームを付け足して、<br class="show__sp">気持ちも装いも華やかに過ごしたいとき。<br>
+            パートナーとそろえて、<br class="show__sp">きずなの証として身に付けたいとき。
+          </p>
+          <p class="em-homeStyling__text c-fadeUp mt" data-mt_trigger=".js-stylingTextEvent" data-mt_delay="450">
+            からだと気持ちが日々変化するマタニティ期のママに、<br>いつでも心地よく、すっと寄りそいます。</p>
+          <p class="em-homeStyling__link c-fadeUp mt" data-mt_trigger=".js-stylingTextEvent" data-mt_delay="600">
+            <a href="pages/collection2022" class="em-home__link m-large u-underlineAnime"><span
+                class="u-underlineAnime__line">Lookbook</span></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="em-homeImageSwiper js-flowSwiperStyling">
+      <div class="swiper-wrapper">
+        <figure class="em-homeImageSwiper__item swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_stylingSwiper01.jpg?v=5103309109350068568"
+            alt="">
+        </figure>
+        <figure class="em-homeImageSwiper__item swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_stylingSwiper02.jpg?v=18435040677281148533"
+            alt="">
+        </figure>
+        <figure class="em-homeImageSwiper__item swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_stylingSwiper03.jpg?v=14775548584733241090"
+            alt="">
+        </figure>
+        <figure class="em-homeImageSwiper__item swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_stylingSwiper04.jpg?v=2159295554965756991"
+            alt="">
+        </figure>
+      </div>
+    </div>
+    <section class="em-homeQuality em-section">
+      <div class="em-homeWrap">
+        <div class="em-homeLayout m-quality">
+          <div class="em-homeLayout__image">
+            <h3 class="em-homeLayout__title c-maskText c-lowIn mt">
+              <span class="c-maskText__row">
+                <span class="js-QualityTitleEvent mt">J</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="50">a</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="100">p</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="150">a</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="200">n</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="250">e</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="300">s</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="350">e</span><span class="mt" data-mt_trigger=".js-QualityTitleEvent"
+                  data-mt_delay="400">&nbsp;</span>
+              </span>
+              <span class="c-maskText__row">
+                <span class="mt" data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="450">Q</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="500">u</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="550">a</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="600">l</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="650">i</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="700">t</span><span class="mt"
+                  data-mt_trigger=".js-QualityTitleEvent" data-mt_delay="750">y</span>
+              </span>
+            </h3>
+            <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_quality.jpg?v=9775564279303810048" alt="">
+          </div>
+          <div class="em-homeLayout__content">
+            <p class="em-homeLayout__read js-qualityEvent c-fadeUp mt">
+              日本品質
+            </p>
+            <p class="em-homeLayout__text c-fadeUp mt" data-mt_trigger=".js-qualityEvent" data-mt_delay="150">
+              人生に寄りそうジュエリーとして、<br>
+              長い年月を安心してお使いいただけるように。
+            </p>
+            <p class="em-homeLayout__text c-fadeUp mt" data-mt_trigger=".js-qualityEvent" data-mt_delay="300">
+              デザインから仕入れ、<br class="u-sp">製造まで国内の一貫体制のもと、<br>
+              経験ゆたかな国内の職人が<br>
+              ひとつひとつ仕上げています。
+            </p>
+            <p class="em-homeLayout__text c-fadeUp mt" data-mt_trigger=".js-qualityEvent" data-mt_delay="450">
+              ものづくりの精神に養われた、<br>
+              妥協のない最高品質のジュエリーをお届けします。
+            </p>
+            <div class="em-homeLayout__attention c-fadeUp mt" data-mt_trigger=".js-qualityEvent" data-mt_delay="600">
+              <p class="em-homeLayout__attentionLabel">( Attension )</p>
+              <p class="em-homeLayout__attentionText">
+                オーダーメイドで制作するため<br>
+                受注〜商品到着まで約1ヶ月かかります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="em-homeBanner js-flowBannerSwiper">
+      <div class="em-homeBanner__list swiper-wrapper">
+        <figure class="em-homeBanner__item m-no01 swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_banner01.jpg?v=13066794973252160450" alt="">
+        </figure>
+        <figure class="em-homeBanner__item m-no02 swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_banner02.jpg?v=10702142595012786202" alt="">
+        </figure>
+        <figure class="em-homeBanner__item m-no03 swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_banner03.jpg?v=2192121736191163733" alt="">
+        </figure>
+        <figure class="em-homeBanner__item m-no04 swiper-slide">
+          <img src="//cdn.shopify.com/s/files/1/0601/1129/0461/files/img_banner04.jpg?v=17913197319759155657" alt="">
+        </figure>
+      </div>
+    </div>
+
+    <footer class="footer gradient section-footer-padding em-footer">
+      <div class="em-footer__wrap">
+        <div class="em-footer__inner">
+          <div class="footer__blocks-wrapper em-footer__blocks">
+            <div class="em-footer__block">
+              <ul class="em-footer__blockList  m-parent">
+                <li class="em-footer__blockItem">
+                  <a href="/" class="em-footer__blockLink u-over">
+                    Home
+                  </a>
+                </li>
+                <li class="em-footer__blockItem">
+                  <a href="https://andvita.com/collections/maternityjewelry" class="em-footer__blockLink u-over">
+                    Maternity Jewelry
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="em-footer__block">
+              <ul class="em-footer__blockList  m-parent">
+                <li class="em-footer__blockItem">
+                  <a href="/collections/necklace" class="em-footer__blockLink u-over">
+                    Necklace
+                  </a>
+                </li>
+                <li class="em-footer__blockItem">
+                  <a href="/collections/babyring" class="em-footer__blockLink u-over">
+                    Babyring
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="em-footer__block">
+              <ul class="em-footer__blockList  m-parent">
+                <li class="em-footer__blockItem">
+                  <a href="/collections/charm" class="em-footer__blockLink u-over">
+                    Charm
+                  </a>
+                </li>
+                <li class="em-footer__blockItem">
+                  <a href="/pages/maternitygift" class="em-footer__blockLink u-over">
+                    Maternity Gift
+                  </a>
+                </li>
+              </ul>
+            </div>
+            
+            
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+    <div id="movieModalContent" class="em-homeModal em-homeYoutube">
+      <div class="em-homeYoutube__inner">
+        <div class="em-homeYoutube__youtube">
+          <div id="emYoutube"></div>
+        </div>
+      </div>
+      <span id="movieModalClose" class="em-homeModal__close"><img src="./img/ico_modalClose.svg" alt="✕"></span>
+    </div>
+  </main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>

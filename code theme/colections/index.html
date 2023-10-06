@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&amp;family=Zen+Old+Mincho:wght@400;500;600;700;900&amp;display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css" rel="stylesheet"
+        type="text/css" media="all">
+
+    <link rel="stylesheet" href="./../css/index.css">
+    <title>Document</title>
+</head>
+
+<body id="body">
+    <div class="em__header" id="em__header">
+        <h1 class="em__header-heading">
+            <a href="/" class="em__header-logo">
+                <img src="./../img/logo_nav.png" alt="logo">
+            </a>
+        </h1>
+        <nav class="header__inline-menu em__header-nav">
+            <ul class="header__navList">
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Home</a></li>
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Jewelry</a></li>
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Necklace</a></li>
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Babyring</a></li>
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Charm</a></li>
+                <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity Gift</a></li>
+            </ul>
+        </nav>
+        <div class="em__header-icons">
+            <div class="em__header-icon">
+                <a href="#" class="em__header-iconLink">
+                    <span class="em__header-iconBag">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="#8e623e"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.9964 13.6213L14.6631 3.93922C14.6329 3.71921 14.4448 3.55521 14.2226 3.55521H11.1114V3.11075C11.1114 1.39559 9.71583 0 8.00022 0C6.28462 0 4.88902 1.39559 4.88902 3.1112V3.55565H1.77783C1.5556 3.55565 1.36804 3.71966 1.33737 3.93966L0.00400011 13.6213C0.00133337 13.6413 0 13.6617 0 13.6817C0 14.96 1.15648 16 2.57785 16H13.4226C14.844 16 16.0004 14.96 16.0004 13.6817C16.0004 13.6613 15.9991 13.6413 15.9964 13.6213ZM5.77794 3.1112C5.77794 1.88583 6.77485 0.888914 8.00022 0.888914C9.22559 0.888914 10.2225 1.88583 10.2225 3.1112V3.55565H5.77794V3.1112ZM13.4226 15.1115H2.57785C1.65782 15.1115 0.907136 14.4853 0.889358 13.7102L2.16539 4.44457H4.88902V5.77794C4.88902 6.02328 5.08814 6.22239 5.33348 6.22239C5.57882 6.22239 5.77794 6.02328 5.77794 5.77794V4.44457H10.2225V5.77794C10.2225 6.02328 10.4216 6.22239 10.667 6.22239C10.9123 6.22239 11.1114 6.02328 11.1114 5.77794V4.44457H13.8351L15.1111 13.7102C15.0933 14.4853 14.3426 15.1115 13.4226 15.1115Z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="em__header-iconText">Bag</span>
+                </a>
+            </div>
+        </div>
+        <div class="em__headerDrawer">
+            <div id="Details-menu-drawer-container" class="menu-drawer-container">
+                <summary id="emDrawerButton" class="em-headerDrawer__summary">
+                    <div class="em-headerDrawer__burger">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </summary>
+                <div id="menu-drawer" class="menu-drawer em-headerDrawer__content" tabindex="-1">
+                    <div class="menu-drawer__inner-container">
+                        <div class="menu-drawer__navigation-container">
+                            <nav class="em-header__nav">
+                                <ul class="header__navList">
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Home</a></li>
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity
+                                            Jewelry</a></li>
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Necklace</a>
+                                    </li>
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Babyring</a>
+                                    </li>
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Charm</a></li>
+                                    <li class="em__header-navItem"><a href="#" class="em__header-navLink">Maternity
+                                            Gift</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="mainContent">
+        <div class="collections_content">
+            <div class="collections_hero-inner">
+                <h1 class="collection-hero__title">
+                    <span class="visually-hidden">コレクション: </span>マタニティジュエリー
+                </h1>
+                <div class="collection-hero__description rte">
+                    <h4>おしゃれなマタニティコーデや出産祝いのプレゼント、ギフトにおすすめ</h4>
+                </div>
+            </div>
+            <div class="colections_product_layout">
+                <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
+                    <form class="facets-vertical-form" id="FacetSortForm">
+                        <div class="facet-filters sorting caption">
+                            <div class="facet-filters__field">
+                                <h2 class="facet-filters__label caption-large text-body">
+                                    <label for="SortBy">並び替え: </label>
+                                </h2>
+                                <div class="select"><select name="sort_by"
+                                        class="facet-filters__sort select__select caption-large" id="SortBy"
+                                        aria-describedby="a11y-refresh-page-message">
+                                        <option value="manual" selected="selected">オススメ</option>
+                                        <option value="best-selling">ベストセラー</option>
+                                        <option value="title-ascending">アルファベット順, A-Z</option>
+                                        <option value="title-descending">アルファベット順, Z-A</option>
+                                        <option value="price-ascending">価格の安い順</option>
+                                        <option value="price-descending">価格の高い順</option>
+                                        <option value="created-ascending">古い商品順</option>
+                                        <option value="created-descending">新着順</option>
+                                    </select>
+                                    <svg aria-hidden="true" focusable="false" role="presentation"
+                                        class="icon icon-caret" viewBox="0 0 10 6">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
+                                            fill="currentColor">
+                                        </path>
+                                    </svg>
+
+                                </div>
+                            </div>
+                            <!-- <noscript>
+                                <button type="submit"
+                                    class="facets__button-no-js button button--secondary">並び替え</button>
+                            </noscript> -->
+                        </div>
+
+                        <div class="product-count-vertical light" role="status">
+                            <h2 class="product-count__text text-body">
+                                <span id="ProductCountDesktop">10個の商品
+                                </span>
+                            </h2>
+                            <div class="loading-overlay__spinner">
+                                <svg aria-hidden="true" focusable="false" role="presentation" class="spinner"
+                                    viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                                    <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                                </svg>
+                            </div>
+                        </div>
+                    </form>
+                </facet-filters-form>
+            </div>
+        </div>
+        <footer class="footer gradient section-footer-padding em-footer">
+            <div class="em-footer__wrap">
+                <div class="em-footer__inner">
+                    <div class="footer__blocks-wrapper em-footer__blocks">
+                        <div class="em-footer__block">
+                            <ul class="em-footer__blockList  m-parent">
+                                <li class="em-footer__blockItem">
+                                    <a href="/" class="em-footer__blockLink u-over">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="em-footer__blockItem">
+                                    <a href="https://andvita.com/collections/maternityjewelry"
+                                        class="em-footer__blockLink u-over">
+                                        Maternity Jewelry
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="em-footer__block">
+                            <ul class="em-footer__blockList  m-parent">
+                                <li class="em-footer__blockItem">
+                                    <a href="/collections/necklace" class="em-footer__blockLink u-over">
+                                        Necklace
+                                    </a>
+                                </li>
+                                <li class="em-footer__blockItem">
+                                    <a href="/collections/babyring" class="em-footer__blockLink u-over">
+                                        Babyring
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="em-footer__block">
+                            <ul class="em-footer__blockList  m-parent">
+                                <li class="em-footer__blockItem">
+                                    <a href="/collections/charm" class="em-footer__blockLink u-over">
+                                        Charm
+                                    </a>
+                                </li>
+                                <li class="em-footer__blockItem">
+                                    <a href="/pages/maternitygift" class="em-footer__blockLink u-over">
+                                        Maternity Gift
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script> -->
+<script src="../js/main.js"></script>
+
+</html>
