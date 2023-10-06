@@ -1,5 +1,5 @@
 <?php
 $config['session'] = [
-    'session_key' => 'unicode_key'
+    'session_key' => 'key'
   ];
 ?>

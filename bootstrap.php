@@ -95,8 +95,6 @@ require_once "./app/App.php";
 
 require_once "core/Model.php"; //load base model
 
-require_once "core/Template.php"; //template engine
-
 require_once "core/Controller.php"; //load base controller
 
 require_once "core/Request.php";  //load Requet

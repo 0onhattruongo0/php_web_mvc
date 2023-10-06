@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+p {
+  margin: 0;
+  letter-spacing: .05em;
+}
+
+
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+font-size: calc(1 * 62.5%);
+height: 100%;
+}
+
+body {
+display: grid;
+grid-template-rows: auto auto 1fr auto;
+grid-template-columns: 100%;
+min-height: 100%;
+margin: 0;
+font-size: 1.5rem;
+letter-spacing: 0.06rem;
+line-height: calc(1 + 0.8 / 1);
+font-family: 'Montserrat', 'Zen Kaku Gothic New', sans-serif;;
+font-style: normal;
+font-weight: 400;
+color: #8e623e;
+font-size: 16px;
+line-height: 2;
+}
+h1, h2, h3, h4, h5, .h0, .h1, .h2, .h3, .h4, .h5 {
+  font-family: 'Zen Old Mincho', sans-serif;;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: calc(1 * .06rem);
+  line-height: calc(1 + .3/max(1,1));
+  word-break: break-word;
+}
+h4, .h4 {
+  font-family: 'Zen Old Mincho', sans-serif;;
+  font-style: normal;
+  font-size: calc(1 * 1.5rem);
+}
+
+img{
+  width: 100%;
+  vertical-align: top;
+}
+*{
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+.auth{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.auth_container{
+    width: 480px;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    border: 1px solid rgb(128,92,63);
+}
+.auth_title{
+    font-size: 4rem;
+}
+.form_auth{
+    margin-top: 1rem;
+    width: 100%;
+}
+.form_auth .field {
+    margin: 3rem 0 0;
+    position: relative;
+}
+.form_auth .field input {
+    flex-grow: 1;
+    text-align: left;
+    padding: 1.5rem;
+    transition: box-shadow .1s ease;
+    appearance: none;
+    background-color: rgb(255,255,255);
+    color: rgb(128,92,63);
+    font-size: 1.6rem;
+    width: 100%;
+    box-sizing: border-box;
+    height: 4.5rem;
+    position: relative;
+    border: 0;
+
+    line-height: 1.5;
+    letter-spacing: .04rem;
+    box-shadow: 0 0 0 .1rem rgb(128,92,63);
+    outline: 0;
+    
+}
+.form_auth .field:hover input{
+    box-shadow: 0 0 0 calc(0.1rem + 1px) rgba(185,166,150);
+}
+
+.form_auth .field input:focus{
+    padding: 2.2rem 1.5rem .9rem 2rem;
+    box-shadow: 0 0 0 calc(0.1rem + 1px) rgba(128,92,63);
+}
+
+.form_auth .field label {
+    font-size: 1.6rem;
+    left: 2rem;
+    top: 1rem;
+    margin-bottom: 0;
+    pointer-events: none;
+    position: absolute;
+    transition: top .1s ease, font-size .1s ease;
+    color: rgba(128,92,63,.75);
+    letter-spacing: .1rem;
+    line-height: 1.5;
+}
+.form_auth .field input:focus~label {
+    font-size: 1rem;
+    top: .5rem;
+    left: 2rem;
+    letter-spacing: .04rem;
+}
+.form_auth button {
+    margin: 4rem 0 1.5rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    padding: 0 3rem;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(255,255,255);
+    transition: box-shadow .1s ease;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(128,92,63,1);
+
+    min-width: 12rem;
+    min-height:4.5rem;
+}
+@media screen and (max-width: 767px){
+    .auth_container{
+        width: 99%;
+        max-width: 480px;
+       
+    }
+}
+

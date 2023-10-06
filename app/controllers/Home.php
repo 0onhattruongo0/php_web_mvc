@@ -3,61 +3,20 @@ class Home extends Controller{
     public $model_home,$data;
     public function __construct(){
 
-        // require_once _DIR_ROOT.'/app/models/HomeModel.php';
-        // $this->model_home = new HomeModel();
-        // dùng base controller k can dung nữa
-
-
-        $this->model_home = $this->model('HomeModel'); // ke thua tu base controller;
     }
     public function index(){
-        // $data = $this->model_home->get();
-        // $data = $this->model_home->getListTest();
-        // echo "<br>";
-        // print_r($data);
-        // echo "<br>";
-        // $details = $this->model_home->find(3);
-        // echo "<br>";
-        // print_r($details);
-        // echo "<br>";
-        // $data = $this->model_home->getList();
-        // $data = [ 
-        //     'test_name'=>'fsd'
-        // ];
-        $data = $this->db->table('test')->get();
-        // echo "<br>";
-        // print_r($data);
-        // echo "<br>";
-        // $this->model_home->deleteTest(7);
-
-        // $check = Session::data('age','26');
-        // var_dump($check);
-        // $sessionData =  Session::data('username');
-        // var_dump($sessionData);
-        // $sessionData =  Session::data();
-        // var_dump($sessionData);
-        // $deleteSession = Session::delete('username');
-        // var_dump($deleteSession);
-
-        // $msg = Session::flash('msg','Thêm dữ liệu thành công');
-        $msg = Session::flash('msg');
-        echo $msg;
+        $data['content'] = 'home/index';
+        $this->render('layouts/client_layout',$data);
     }
     public function details($id=''){
         $data = $this->model_home->getDetail($id);
-        // var_dump($data);
     }
-    // public function search($keyword=''){
-    //     $keyword = $_GET['keyword'];
-    //     echo "Từ khóa cần tìm:".$keyword;
-    // }
+
 
     public function get_user(){
-        // $request = new Request();
-        // $this->data['errors'] = Session::flash('errors');
-        $this->data['msg'] = Session::flash('msg');
-        $this->data['old'] = Session::flash('old');
-        $this->render('users/add',$this->data);
+        // $this->data['msg'] = Session::flash('msg');
+        // $this->data['old'] = Session::flash('old');
+        $this->render('users/add');
     }
     public function post_user(){
         // $userId = 1;
@@ -102,8 +61,8 @@ class Home extends Controller{
                 // $this->data['old'] = $request->getFields();
 
                 // Session::flash('errors',$request->errors());
-                Session::flash('msg','Đã có lỗi xảy ra vui lòng thử lại');
-                Session::flash('old',$request->getFields());
+                // Session::flash('msg','Đã có lỗi xảy ra vui lòng thử lại');
+                // Session::flash('old',$request->getFields());
             }
             // $this->render('users/add',$this->data);
         }

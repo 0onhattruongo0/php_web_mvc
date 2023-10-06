@@ -25,12 +25,6 @@ class Connection {
             $data['message'] = $mess;
             App::$app->loadError('database',$data);
             die();
-            // if(preg_match('/Access denied for user/',$mess)){
-            //     die('Loi ket noi co so du lieu');
-            // }
-            // if(preg_match('/Unknown database/',$mess)){
-            //     die('Khong tim thay co so du lieu');
-            // }
         }
        
 
