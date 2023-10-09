@@ -3,12 +3,10 @@
 class AuthMiddleware extends Middleware{
     public function handle()
     {
-        // var_dump($this->db);
-        // $homeModel = Load::model('HomeModel');
-        // var_dump($homeModel);
-        if(Session::data('admin_login') == null){
-            $response = new Response();
-            // $response->redirect('trang-chu');
+        if(!empty(Session::data('user_login'))){
+            return true;
         }
+        $response = new Response();
+        $response->redirect('admin/login');
     }
 }

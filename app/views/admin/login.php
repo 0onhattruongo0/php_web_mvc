@@ -1,6 +1,3 @@
-<?php
-var_dump($errors['username']);
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,19 +14,20 @@ var_dump($errors['username']);
     <div class="auth">
         <div class="auth_container">
             <h1 class="auth_title">LOGIN</h1>
-            <form action="<?=__WEB_ROOT ?>/admin/login/post_user" method="post" class="form_auth">
+            <form action="" method="post" class="form_auth">
                 <div class="field">        
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" value="" id="username" placeholder="">
                     <label for="username">
                     UserName
                     </label>
-                    <span style="color: red;"><?= !empty($errors['username']) ? $errors['username'] : '' ?></span> 
+                    <?php echo form_error('username','<span style="color: red; text-align: left;">','</span>')?>
                 </div>
                 <div class="field">          
-                <input type="password" value="" name="password">
+                <input type="password" value="" name="password" placeholder="">
                 <label for="password">
                     Password
                 </label>
+                <?php echo form_error('password','<span style="color: red; text-align: left;">','</span>')?>
                 </div>
                 <button type="submit">
                 Login

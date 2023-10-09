@@ -9,6 +9,7 @@ class Route{
             $url = '/';
         }
         $handleUrl= $url;
+        $this->__keyRoute = $handleUrl;
         if(!empty($routes)){
             
             foreach($routes as $key=>$value){

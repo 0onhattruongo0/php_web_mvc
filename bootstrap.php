@@ -23,6 +23,7 @@ $web_root = $web_root.$folder;
 
 define('__WEB_ROOT',$web_root);
 
+        
 // tu dong load configs
 $configs_dir = scandir('configs');
 if(!empty($configs_dir)){

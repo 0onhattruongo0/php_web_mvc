@@ -148,7 +148,7 @@ a{
     box-shadow: 0 0 0 calc(0.1rem + 1px) rgba(185,166,150);
 }
 
-.form_auth .field input:focus{
+.form_auth .field input:focus,.form_auth .field input:not(:placeholder-shown){
     padding: 2.2rem 1.5rem .9rem 2rem;
     box-shadow: 0 0 0 calc(0.1rem + 1px) rgba(128,92,63);
 }
@@ -165,7 +165,7 @@ a{
     letter-spacing: .1rem;
     line-height: 1.5;
 }
-.form_auth .field input:focus~label {
+.form_auth .field input:focus~label,.form_auth .field input:not(:placeholder-shown)~label {
     font-size: 1rem;
     top: .5rem;
     left: 2rem;
@@ -199,4 +199,3 @@ a{
        
     }
 }
-

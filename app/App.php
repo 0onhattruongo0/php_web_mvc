@@ -4,7 +4,7 @@ class App {
 
     private $__controller,$__action,$__params,$__route, $__db;
     static public $app;
-    
+  
 
     function __construct()
     {
@@ -33,6 +33,9 @@ class App {
         }
         return $url;
     }
+
+
+ 
     function handleUrl(){
 
         $url = $this->getUrl();
@@ -127,9 +130,10 @@ class App {
 
         // Xử lý params
         $this->__params =array_values($urlArray);
-
         if(method_exists($this->__controller,$this->__action)){
+            
             call_user_func_array([$this->__controller, $this->__action], $this->__params);
+            
         }else{
             $this->loadError();
         }
@@ -147,16 +151,23 @@ class App {
     // Middleware
 
     public function handleRouteMiddleWare($routeKey,$db){
+        
         global $config;
         $routeKey= trim($routeKey);
         if(!empty($config['app']['routeMiddleware'])){
+            
             $routeMiddleWareArr= $config['app']['routeMiddleware'];
+
             foreach($routeMiddleWareArr as $key=>$middleWareItem){
-                if($routeKey == trim($key) && file_exists('app/middlewares/'.$middleWareItem.'.php')){
+                $check = preg_match('~'.trim($key).'.+~',$routeKey,$matches);
+                // var_dump($matches[0]);
+                if($routeKey == $matches[0] && file_exists('app/middlewares/'.$middleWareItem.'.php')){
+                    
                     require_once 'app/middlewares/'.$middleWareItem.'.php';
                     
                     if(class_exists($middleWareItem)){
                         $middleWareObject = new $middleWareItem();
+                       
                         if(!empty($db)){
                             $middleWareObject->db = $db;
                         }

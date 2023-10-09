@@ -1,11 +1,13 @@
 <?php
+
 $config['app'] = [
     'service'=>[
         // 'HtmlHelper'
         HtmlHelper::class
     ],
     'routeMiddleware'=>[
-        'san-pham' => AuthMiddleware::class,
+        'admin/dashboard' => AuthMiddleware::class,
+         'admin/users' => AuthMiddleware::class,
     ],
     'globalMiddleware' =>[
         ParamsMiddleware::class,
@@ -15,3 +17,4 @@ $config['app'] = [
     ]
 ];
 ?>
+
