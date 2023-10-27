@@ -159,8 +159,7 @@ class App {
             $routeMiddleWareArr= $config['app']['routeMiddleware'];
 
             foreach($routeMiddleWareArr as $key=>$middleWareItem){
-                $check = preg_match('~'.trim($key).'.+~',$routeKey,$matches);
-                // var_dump($matches[0]);
+                $check = preg_match('~('.trim($key).')\s*~',$routeKey,$matches);
                 if($routeKey == $matches[0] && file_exists('app/middlewares/'.$middleWareItem.'.php')){
                     
                     require_once 'app/middlewares/'.$middleWareItem.'.php';

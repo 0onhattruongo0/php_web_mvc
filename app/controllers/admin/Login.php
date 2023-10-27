@@ -34,6 +34,12 @@ class Login extends Controller{
                         $response = new Response();
                         $response->redirect('admin/dashboard');
                     }
+                    else{
+                        Session::flash('errors_login','Account is incorrect');
+                        Session::flash('old',$request->getFields());
+                        $response = new Response();
+                        $response->redirect('admin/login');
+                    }
                 }
             }
         }

@@ -1,22 +1,29 @@
 <?php
 // Kế thừa từ class Model
-class ProductsModel{
-    protected $_table = "products";
-    public function getList(){
-        $data=[
-            'sản phẩm 1',
-            'sản phẩm 2',
-            'sản phẩm 3'
-        ];
-        return $data;
+class ProductsModel extends Model{
+    function tableFill(){
+        return 'products';
     }
-    public function getDetail($id){
-        $data=[
-            'sản phẩm 1',
-            'sản phẩm 2',
-            'sản phẩm 3'
-        ];
-        return $data[$id];
+    function fieldFill()
+    {
+        return "*";
+    }
+    function primaryKey()
+    {
+        return "id";
     }
 
+    // public function insertUsers($data)
+    // {
+    //     $this->db->table('products')->insert($data);
+    //     return $this->db->lastId();
+    // }
+    // public function updateUsers($data,$id)
+    // {
+    //     $this->db->table('user')->where('id','=',$id)->update($data);
+    // }
+    // public function deleteUsers($id)
+    // {
+    //     $this->db->table('user')->where('id','=',$id)->delete();
+    // }
 }

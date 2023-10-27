@@ -14,9 +14,13 @@
     <div class="auth">
         <div class="auth_container">
             <h1 class="auth_title">LOGIN</h1>
+            
             <form action="" method="post" class="form_auth">
+                <?php if(Session::data('errors_login')){
+                    echo '<span style="color: red; text-align: left;">'.Session::flash('errors_login').'</span>';
+                } ?>
                 <div class="field">        
-                    <input type="text" name="username" value="" id="username" placeholder="">
+                    <input type="text" name="username" value="<?= old('username') ?>" id="username" placeholder="">
                     <label for="username">
                     UserName
                     </label>

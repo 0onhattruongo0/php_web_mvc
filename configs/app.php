@@ -7,7 +7,8 @@ $config['app'] = [
     ],
     'routeMiddleware'=>[
         'admin/dashboard' => AuthMiddleware::class,
-         'admin/users' => AuthMiddleware::class,
+        'admin/users' => AuthMiddleware::class,
+        'admin/categories' => AuthMiddleware::class,
     ],
     'globalMiddleware' =>[
         ParamsMiddleware::class,

@@ -142,7 +142,6 @@ class Request{
                             if(count($ruleArr)==3){
                                 $con = trim($dataFields[$fieldsName]);
                                 $checkExits = $this->db->query("SELECT $fieldCheck FROM $tableName WHERE $fieldCheck ='$con'")->rowCount();
-                                // var_dump($checkExits);
                             }elseif(count($ruleArr)==4){
                                 if(!empty($ruleArr[3]) && preg_match('~.+?\=.+?~',$ruleArr[3])){
                                     $conditionWhere = $ruleArr[3];

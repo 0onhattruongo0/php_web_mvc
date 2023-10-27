@@ -81,8 +81,8 @@ class Users extends Controller{
             // set rules
             $request->rules([
                 'name' => 'required|min:2|max:30',
-                'username' => 'required|min:5|max:30|unique:user:username:id:'.$id,
-                'email' => 'required|email|min:6|unique:user:email:id:'.$id,
+                'username' => 'required|min:5|max:30|unique:user:username:id='.$id,
+                'email' => 'required|email|min:6|unique:user:email:id='.$id,
             ]);
 
             // set message
@@ -103,7 +103,7 @@ class Users extends Controller{
             if(!$validate){
                 
                 $response = new Response();
-                $response->redirect('admin/users/edit?id='.$id.'');
+                $response->redirect('admin/users/edit/'.$id.'');
             }else{
                 $data = [];
                 $data_all = $request->getFields();

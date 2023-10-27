@@ -52,7 +52,12 @@
                     <a class="nav-link" href="<?= __WEB_ROOT ?>/admin/users">
                         Users
                     </a>
-                
+                    <a class="nav-link" href="<?= __WEB_ROOT ?>/admin/products">
+                        Products
+                    </a>
+                    <a class="nav-link" href="<?= __WEB_ROOT ?>/admin/categories">
+                        Categories
+                    </a>
                 </div>
             </div>
             
@@ -60,7 +65,12 @@
     </div>
     <div id="layoutSidenav_content">
         <?php
-            $this->render($content,$sub_content);
+            if(!empty($sub_content)){
+                $this->render($content,$sub_content);
+            }else{
+                $this->render($content);
+            }
+           
         ?>
         <footer class="py-4 bg-light mt-auto">
             <div class="container-fluid">
@@ -89,8 +99,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-<script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
         integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw==" crossorigin="anonymous"></script>
 </body>

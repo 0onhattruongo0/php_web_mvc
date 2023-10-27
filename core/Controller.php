@@ -16,12 +16,12 @@ class Controller{
     }
 
     public function render($view,$data=[]){
-
         if(!empty(View::$dataShare)){
             $data = array_merge($data, View::$dataShare);
             // print_r($data);
+            extract($data); //  key thành biến
         }
-        extract($data); //  key thành biến
+      
        
         if(file_exists(_DIR_ROOT.'/app/views/'.$view.'.php')){
             require_once _DIR_ROOT.'/app/views/'.$view.'.php';
